@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.progress {
+  margin-top: 15%;
+
+}
+
+.bg-info {
+  animation-name: animateProgress;
+  animation: normal 3000ms ease;
+}
+
+.progress-bar {
+  transition-duration: 1.5s;
+  transition-delay: 1s;
+}
+
+
+img {
+  border-radius: 50%;
+}
+
+@keyframes animateProgress {
+  0% { width: 0;}
+
+}
