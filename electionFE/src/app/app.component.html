@@ -5,6 +5,15 @@
       2020 Democratic Candidate Power Rankings
     </h1>
   </div>
+  <div class="usmap">
+    <!-- <us-map fillStateColor="#a9a9a9" strokeColor="#666666"></us-map> -->
+<div class="row">
+
+        <app-usmap></app-usmap>
+
+</div>
+
+  </div>
   <div class="row" *ngFor="let primaryDem of primaryDemsList">
       <div class="col-6 col-md-4"> <span class="profImage">  <img [src]="primaryDem.image"/></span> <br />
         <h3>  {{primaryDem.name}} </h3>

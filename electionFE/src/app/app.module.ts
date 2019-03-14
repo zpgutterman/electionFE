@@ -6,18 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrimaryDemApiService } from './primarydem/primarydem-api.service';
-import {RoundProgressModule} from 'angular-svg-round-progressbar';
+import { UsmapComponent } from './usmap/usmap.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsmapComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     NgbModule,
-    RoundProgressModule
   ],
   providers: [PrimaryDemApiService],
   bootstrap: [AppComponent]

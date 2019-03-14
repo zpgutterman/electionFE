@@ -19,6 +19,33 @@ img {
   border-radius: 50%;
 }
 
+.map img {
+  border-radius: 0;
+  min-width: 900px;
+  min-height: 593px;
+
+}
+
+svg {
+  border-radius: 0;
+  min-width: 900px;
+  min-height: 593px;
+}
+
+svg .state {
+    stroke-width: 2;
+    stroke: #fff;
+
+    -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+    -o-transition: stroke 0.5s, stroke-width 0.5s;
+    transition: stroke 0.5s, stroke-width 0.5s;
+}
+svg .state:hover , .state.active {
+    cursor: pointer;
+    stroke-width: 4;
+    stroke: #000;
+}
+
 @keyframes animateProgress {
   0% { width: 0;}
 

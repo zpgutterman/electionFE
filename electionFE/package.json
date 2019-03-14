@@ -20,12 +20,12 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "@ng-bootstrap/ng-bootstrap": "^4.1.0",
-    "angular-svg-round-progressbar": "^2.0.0",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
     "tslib": "^1.9.0",
+    "us-map": "file:../../Downloads/angular4-us-map-svg-master",
     "xml2js": "^0.4.19",
     "zone.js": "~0.8.26"
   },
