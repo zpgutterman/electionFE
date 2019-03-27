@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrimaryDemApiService } from './primarydem/primarydem-api.service';
 import { UsmapComponent } from './usmap/usmap.component';
+import { CandidatesComponent } from './candidates/candidates.component';
+import { CandidateAPIService } from './candidates/candidates.service';
+import { FtepollsComponent } from './ftepolls/ftepolls.component';
+import { FTEPollAPIService } from './ftepolls/ftepoll.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsmapComponent
+    UsmapComponent,
+    CandidatesComponent,
+    FtepollsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +26,7 @@ import { UsmapComponent } from './usmap/usmap.component';
     AppRoutingModule,
     NgbModule,
   ],
-  providers: [PrimaryDemApiService],
+  providers: [PrimaryDemApiService, CandidateAPIService, FTEPollAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
